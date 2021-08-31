@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.startsida-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.startsida-logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.my-logo {
+    height: 450px;
+    width: 700px;
+}
+
+
+.startsida-text {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+.startsida-button {
+    margin-top: 3rem;
+    width: 391px;
+    height: 102px;
+    left: 529px;
+    top: 829px;
+    border-radius: 50px;
+    background-color: #9E00FF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.startsida-button:hover {
+    background-color: #6a1d9b;
+    transition: 1s;
+}
