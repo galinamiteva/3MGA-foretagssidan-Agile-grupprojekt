@@ -69,8 +69,20 @@ body {
     font-size: 20px;
 }
 
+
+#kontakt-form  label {
+
+background-color:black;
+color: white;
+padding:5px 20px;
+border-radius:5%;
+
+
+}
+
 #kontakt-form input {
     width: 400px;
+
     margin-bottom: 15px;
     padding: 10px;
 }
