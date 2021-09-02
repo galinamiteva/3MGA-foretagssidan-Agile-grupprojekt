@@ -7,6 +7,7 @@
     background-image: url(room.png); 
     background-size:cover;
     background-repeat: no-repeat;
+    padding-bottom: 3rem;
   
 }
 .omOss-h2{
@@ -23,11 +24,15 @@
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 28rem;
+   
     justify-items: center;
     align-items: center;
     padding-top: 6rem;
 }
+.omOss-products-item{
+    height: 28rem;
+    width: 28rem;
+} 
 
 .omOss-h3{
    
@@ -44,11 +49,26 @@
 }
 .omOss-employees{
     width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+.omOss-employees-row1, .omOss-employees-row3  {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 27rem 27rem 27rem;
-    gap: 2rem; 
   
+  
+    justify-items: center;
+    align-items: center;
+    
+}
+.omOss-employees-row2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
     justify-items: center;
     align-items: center;
     
@@ -56,7 +76,7 @@
 .omOss-card{
 
     border: 3px solid blue;
-    height: 418px;
+    height: 25rem;
     width: 334px;
     border-radius: 96px;
     display:flex;
@@ -64,11 +84,58 @@
     align-items: center;
     justify-content: center;
     background-color:rgba(2, 62, 125, 1);
-    ;
-
-
+    margin:2rem auto;
 }
-.omOss-img{}
+.omOss-img{
+    height:156px; 
+    width:170px;
+}
 .mOss-h5{}
 .omOss-p{}
 .omOss-h6{}
+
+@media (max-width: 768px){
+    .omOss-h3{
+   
+        font-size: 5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 3rem;
+        letter-spacing: 0em;
+        text-align: center;
+     width: 100%;
+        margin:6rem 0;
+        
+    
+    }
+    .omOss-h2{
+        width:100%;
+    font-size: 5rem;
+        padding:2rem 1rem;
+    font-weight: 400;
+    line-height: 5rem;
+  
+    }
+    .omOss-products{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr ; 
+        gap: 2rem;
+      
+    }
+    .omOss-products-item{
+        height: 5rem;
+        width: 5rem;
+      
+    } 
+    .omOss-employees-row1, .omOss-employees-row2, .omOss-employees-row3{
+    
+        grid-template-columns: 1fr; 
+    
+        justify-items: center;
+        align-items: center;
+        
+    }
+
+
+  }
