@@ -28,28 +28,6 @@
 } 
 
 
-/* Teams ska bestämma  */
-
-/*  .frogor-wrapper {
-  height: 100%;
-  width: 100vw;
-  background-image: url(images/frogor-hero.png); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} 
-  */
-
-/*  Header , som vi ska ta borta */
-.frogor-header {
-  height: 100px;
-  width: 100%;
-  background-color:var(--black-color);
-  margin: 0;
-  color:var(--white-color);
-  text-align: center;
-}
-
 .frogor-title{
   font-size: 6.25rem;
   line-height: 9.38rem;
