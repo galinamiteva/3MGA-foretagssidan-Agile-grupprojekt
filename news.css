@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", cursive;
+}
+:root {
+    --darkest-color: #001D3D;
+    --dark-color: #023E7D;
+    --violet-color: #9E00FF;
+    --white-color:#fff;
+    --black-color:#000;
+  
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: var(--white-color);
+    background: canvas(mybackground);
+    background-attachment: fixed;
+}
+
+.container {
+    position: relative;
+}
+
+
+.background {
+    position: absolute;
+    z-index: -1;
+    background-color: #d2b6e4;
+    
+}
+
+
+
+header{
+    width: 100vw;
+    height: 60px;
+    background-color:var(--black-color) ;
+}
+
+header h1 {
+    color:var(--white-color);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    text-transform:uppercase ;
+}
+
+main .sort-options {
+    display:flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+main .sort-options button {
+flex: 1 1 1 25%;
+appearance: none;
+background-color: var(--dark-color);
+color: var(--white-color);
+border:none;
+border-radius: 10px;
+outline: none;
+padding: 15px 8px;
+margin: 0px 8px;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+cursor: pointer;
+}   
+
+main .list-headers{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width:1000px;
+    margin: 30px auto 0px;
+    padding: 0px 15px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+main .list {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}  
+
+main .list .list-item {
+    display:flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+   
+    margin: 15px 0px;
+    padding: 15px;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+}
+
+.list-item div:nth-child(1),
+.list-item div:nth-child(2),
+.list-item div:nth-child(3),
+.list-item div:nth-child(3){
+    flex: 1  ;
+}
+
+
+
+
