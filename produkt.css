@@ -33,7 +33,7 @@
 
 .startsida-text {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -41,8 +41,8 @@
 
 .startsida-button {
     margin-top: 3rem;
-    width: 391px;
-    height: 102px;
+    width: 350px;
+    height: 80px;
     left: 529px;
     top: 829px;
     border-radius: 50px;
@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     cursor: pointer;
 }
@@ -60,4 +60,27 @@
 .startsida-button:hover {
     background-color: #6a1d9b;
     transition: 1s;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    .my-logo {
+        margin-top: 5rem;
+        height: 330px;
+        width: 500px;
+    }
+
+
+    .startsida-text {
+        font-size: 1.5rem;
+    }
+
+    .startsida-button {
+        width: 300px;
+        height: 60px;
+        margin-top: 1rem;
+        font-size: 2.3rem;
+    }
 }
