@@ -1,7 +1,7 @@
 
 
 .kontakt-container {
-    width: 100%;
+    width:100vw;
     height: 100vh;
     background-color: rgb(8, 63, 45);
 }
@@ -52,60 +52,6 @@
     width: 50%;
 }
 
-/* #kontakt-form {
-    width: 100%;
- 
-    font-size: 20px;
-    font-weight: 800;
-    color: black;
-    font-size: 20px;
-}
-
- */
-
-/* #kontakt-form  label {
-
-background-color:black;
-color: white;
-padding:5px 20px;
-border-radius:5%;
-
-
-}
-
-#kontakt-form input {
-    width: 400px;
-
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-#kontakt-form #about {
-    width: 400px;
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-#kontakt-form textarea {
-    width: 400px;
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-#submit-button {
-    margin-left: 130px;
-    background-color: white;
-    font-size: 15px;
-    /* SEND MESSAGE 
-    width: 261px;
-    height: 40px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 21px;
-    text-align: center;
-    border-radius: 50px
-} */
-
 
 .animated-form h3 {
     color: #fff;
@@ -134,11 +80,13 @@ border-radius:5%;
     font-size: 1.5rem;
     font-weight: 400;
     transition: 0.4s ease-out;
+
   }
   
+
   .animated-form .form-group input {
     display: block;
-    width: 90%;
+    width: 60%;
     padding: 5px 0px;
     border: none;
     outline: none;
@@ -148,7 +96,11 @@ border-radius:5%;
     font-size: 1rem;
     transition: 0.4s ease-out;
   }
-  
+
+  .animated-form .form-group textarea {
+    width: 60%;
+  }
+
   .animated-form .form-group:focus-within label,
   .animated-form .form-group.has-content label {
     top: 0px;
@@ -157,13 +109,7 @@ border-radius:5%;
     
   }
   
-  /* .animated-form .form-group:focus-within input, 
-  .animated-form .form-group.has-content input {
-    border-bottom-color: #fff;
-  } */
-  .animated-form .form-group.flex-end {
-    margin-bottom: 25px;
-  }
+  
   .animated-form .form-group .button {
     display: inline-block;
     width: auto;
@@ -201,7 +147,7 @@ input[type=text]:focus, textarea:focus {
   }
   
 .kontakt-container-bottom {
-    width: 100%;
+    width: 100vw;
     height: 30vh;
     background-image: url("./images/map.png");
     background-repeat: no-repeat;

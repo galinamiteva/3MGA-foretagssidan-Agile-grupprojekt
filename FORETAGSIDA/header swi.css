@@ -2,7 +2,7 @@
   .header-fixed {
       position: fixed;
       top: 0;
-      z-index: 100;
+      z-index: 100;  /* måste bli pga canvas */
       width: 100%;
       background-color: rgba(21, 21, 21, 1);
       box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
@@ -63,7 +63,7 @@
   
   .change-english{
       text-decoration: none;
-      color: red
+      color: white
   }
   
   .change-swedish{

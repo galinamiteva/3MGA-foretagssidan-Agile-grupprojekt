@@ -2,28 +2,21 @@
 
 
 
-
-
-
 .startsida-wrapper {
-    height: 100%;
-    width: 100vw;
-    
+    height: 95vh;
+    width: 100vw;   
     
 }
 
 .foreground{
     display: flex;
-    position: relative;
-    top:115px; 
+    position: relative;   
     z-index: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
     height: 100%;
-    width: 100%;
-    
+    width: 100%;   
     
 }
 
@@ -33,9 +26,9 @@
     left: 0;
     z-index:- 1;
     background-image: url(wallpaper.jpg); 
-   /*  background-image: url(/images/purple_bedroom_PNG.png); */
+   
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     /* background-size: 100% 100%; */
     background-position: center;
@@ -61,28 +54,6 @@
     font-size: 2rem;
     text-align: center;
 }
-
-
-
-/* .startsida-button {
-    margin-top: 3rem;
-    width: 350px;
-    height: 80px;
-    left: 529px;
-    top: 829px;
-    border-radius: 50px;
-    background-color: #9E00FF;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-}
- */
-
-/* GGGG */
 
 
   .startsida-form input {

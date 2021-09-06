@@ -10,49 +10,43 @@
     padding-bottom: 3rem;
   
 }
-
-.omOss-title{
-    position: relative;
-    top:310px;
-}
 .omOss-h2{
     width:70%;
     font-size: 100px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 150px;
     letter-spacing: 0em;
     text-align: center;
     margin: 0 auto;
     }
-
 .omOss-products{
-    
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 1fr; 
    
     justify-items: center;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
-/* .omOss-products-item{
+.omOss-products-item{
     height: 28rem;
     width: 28rem;
-}  */
+} 
 
-.omOss-h3{   
-    font-size: 80px;
+.omOss-h3{
+   
+    font-size: 100px;
     font-style: normal;
     font-weight: 800;
     line-height: 150px;
     letter-spacing: 0em;
     text-align: center;
-     margin:6rem 0;
-     position: relative;
-     top: -150px
-}
+ 
+    margin:6rem 0;
+    
 
+}
 .omOss-employees{
     width: 100%;
    display: flex;
@@ -82,7 +76,7 @@
 .omOss-card{
 
     border: 3px solid blue;
-    height: 23rem;
+    height: 25rem;
     width: 21rem;
     border-radius: 96px;
     display:flex;
