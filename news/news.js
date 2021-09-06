@@ -26,30 +26,21 @@ fetch("news.json")
     return resp.json();
   })
   .then(function (data) {
-    console.log(data);
+    // console.log(data);
+
+
+
+
+
+
+    
+
+
+
 
     for (let i = 0; i < data.length; i++) {
 
       let desc = false;
-      //Sortering på name-title
-      // sort_name_btn.addEventListener('click', () => {
-      //     let array = sort_array_by(data, 'name' , desc);
-      //     displayList(array);
-
-      //     desc = !desc;
-
-      // });
-      // //Sortering på author
-      // sort_author_btn.addEventListener('click', () => {
-      //     let array = sort_array_by(data, 'author' , desc);
-      //     displayList(array);
-
-      //     desc = !desc;
-
-      // }); 
-
-      // Sortering på type - vi behöver inte 
-   
 
       //Sortering på date
       sort_date_btn.addEventListener('click', () => {
@@ -85,12 +76,22 @@ fetch("news.json")
       return array
     }
 
+
+
+
     /************DISPLAY******************************************* */
     function displayList(array = []) {
       list.innerHTML = "";
+
+      // console.log(selectFitler.value);
+
+
+
+
+      // console.log('alla alla')
+
       for (let i = 0; i < array.length; i++) {
         let item = array[i];
-
         let item_element = document.createElement('div');
         item_element.classList.add('list-item');     // 2 namn på classen <div class="item-name   items"> TITLE </div>
 
@@ -126,8 +127,44 @@ fetch("news.json")
 
         list.appendChild(item_element);
 
+
       }
+
+
+
+
+
+      // } else if (selectFitler.value == 'artikel') {
+
+      //   console.log('article article')
+      // }
+
+      // else if (selectFitler.value == 'nyhter') {
+
+      //   console.log('nyhter nyhter')
+      // }
+
+
+
+
+
+
+
+
+      // console.log(item.type)
+      const selectFitler = document.querySelector('#filter')
+
+      selectFitler.onclick = () => {
+  
+        console.log(selectFitler.value);
+  
+      }
+
+
+
+
     }
+
 
     /* **********************FILTRERING*****************************************/
     displayList(data);
@@ -161,6 +198,10 @@ fetch("news.json")
     //     }
     //   });
     // });
+
+
+
+
 
 
   })
