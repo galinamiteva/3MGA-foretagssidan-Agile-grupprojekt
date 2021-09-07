@@ -1,0 +1,58 @@
+[
+    {
+        "author" : "Larissa Yunis",
+        "name":"Hur fungerar en glödlampa?",
+        "type": "article",
+        "date":"2021-04-13"
+        
+    },
+    {
+        "author": "William Pettersson",
+        "name":"Ett effektivt sätt att tillverka ljus?",
+        "type": "article",
+        "date": "2020-07-09"
+
+    },
+    {
+        "author": "Anna-Karin Amilon",
+        "name":"15 snygga lampor för våren 2020 – i butik just nu",
+        "type": "news",
+        "date":"2020-01-30"
+    },
+    {
+        "author": "Ella Todoro",
+        "name":"Bästa Nattlampan 2020!!!",
+        "type": "news",
+        "date": "2021-07-02"
+ 
+    },
+    {
+        "author": "Aja Alfredo",
+        "name":"Belysning kan ge stil till ett rum", 
+        "type": "article",
+        "date": "2020-02-13"
+
+    },
+    {
+        "author": "Aurora Moretti",
+        "name":"3MGA släpper nya smarta-lampor",
+        "type": "news",
+        "date":"2021-04-28"
+    
+    },
+    {
+        "author": "Charlotta von Schultz",
+        "name":"Så lyser ledlampan utan ström",
+        "type": "article",
+        "date": "2014-03-13"
+        
+    },
+    {
+        "author": "Daniella Olhsson",
+        "name":"Barn påverkas inte av mörker på samma sätt som vuxna",
+        "type": "news",
+        "date": "2017-10-07"
+
+    }
+    
+]
