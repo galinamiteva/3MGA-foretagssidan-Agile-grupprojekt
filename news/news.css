@@ -132,6 +132,11 @@ main .list .list-item {
     font-weight: 300;
 }
 
+main .list .list-item:hover {
+    background-color: rgb(46, 45, 45);
+    cursor: pointer;
+}
+
 .list-item div:nth-child(1),
 .list-item div:nth-child(2),.list-item div:nth-child(3)  {
     flex: 1  ;
@@ -193,10 +198,28 @@ main .list .list-item {
 
 
 #filter {
-
 padding:10px;
 color: white;
 background-color: var(--dark-color);
+
+
+background-color: var(--dark-color);
+color: var(--white-color);
+border: none;
+border-radius: 10px;
+outline: none;
+padding: 10px 8px;
+margin: 0px 0px;
+font-size: 1rem;
+font-weight: 500;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+
+#filter:hover {
+    background-color: var(--darkest-color);
+    
 }
 
 
