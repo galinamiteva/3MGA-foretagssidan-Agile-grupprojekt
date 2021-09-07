@@ -9,7 +9,7 @@ const forms = document.forms;
 const sort_date_btn = document.querySelector('.sort-options .sort-date')
 
 
-fetch("/news/news.json")
+fetch("/news/newsEN.json")
   .then(function (resp) {
     return resp.json();
   })
