@@ -205,6 +205,12 @@ main .list .list-item {
 
 
 
+#filter {
+
+padding:10px;
+color: white;
+background-color: var(--dark-color);
+}
 
 
 

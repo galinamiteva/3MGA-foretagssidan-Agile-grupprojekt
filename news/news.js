@@ -18,7 +18,7 @@ const forms = document.forms;
 // const sort_name_btn =document.querySelector('.sort-options .sort-name');
 // const sort_author_btn = document.querySelector('.sort-options .sort-author') 
 const sort_date_btn = document.querySelector('.sort-options .sort-date')
-const sort_meta_btn = document.querySelector('.sort-options .sort-meta')
+// const sort_meta_btn = document.querySelector('.sort-options .sort-meta')
 
 
 fetch("news.json")
@@ -33,7 +33,7 @@ fetch("news.json")
 
 
 
-    
+
 
 
 
@@ -51,13 +51,13 @@ fetch("news.json")
 
       });
 
-      sort_meta_btn.addEventListener('click', () => {
-        let array = sort_array_by(data, 'type', desc);
-        displayList(array);
+      // sort_meta_btn.addEventListener('click', () => {
+      //   let array = sort_array_by(data, 'type', desc);
+      //   displayList(array);
 
-        desc = !desc;
+      //   desc = !desc;
 
-      });
+      // });
 
 
 
@@ -94,6 +94,17 @@ fetch("news.json")
         let item = array[i];
         let item_element = document.createElement('div');
         item_element.classList.add('list-item');     // 2 namn på classen <div class="item-name   items"> TITLE </div>
+        // console.log(item.type)
+
+        if (item.type == 'article') {
+          item_element.classList.add('article-item');
+
+        }
+
+        if (item.type == 'news') {
+          item_element.classList.add('news-item');
+
+        }
 
         //display name-title
         let title = document.createElement('div');
@@ -124,7 +135,6 @@ fetch("news.json")
 
         date.innerText = item.date
         item_element.appendChild(date)
-
         list.appendChild(item_element);
 
 
@@ -152,14 +162,62 @@ fetch("news.json")
 
 
       // console.log(item.type)
+
       const selectFitler = document.querySelector('#filter')
+      const articleItems = document.querySelectorAll('.article-item')
+      const newsItems = document.querySelectorAll('.news-item')
 
       selectFitler.onclick = () => {
-  
         console.log(selectFitler.value);
-  
-      }
 
+        if (selectFitler.value == 'news') {
+          articleItems.forEach((articleItem) => {
+            console.log(articleItem)
+            articleItem.style.display = 'none';
+
+          })
+          newsItems.forEach((newsItem) => {
+            console.log(newsItem)
+            newsItem.style.display = 'flex';
+
+          })
+
+        }
+
+        if (selectFitler.value == 'articles') {
+          articleItems.forEach((articleItem) => {
+            console.log(articleItem)
+            articleItem.style.display = 'flex';
+
+          })
+          newsItems.forEach((newsItem) => {
+            console.log(newsItem)
+            newsItem.style.display = 'none';
+
+          })
+
+        }
+
+        if (selectFitler.value == 'all') {
+          articleItems.forEach((articleItem) => {
+            console.log(articleItem)
+            articleItem.style.display = 'flex';
+
+          })
+          newsItems.forEach((newsItem) => {
+            console.log(newsItem)
+            newsItem.style.display = 'flex';
+
+          })
+
+        }
+        console.log(articleItems)
+
+
+
+
+
+      }
 
 
 
@@ -208,3 +266,5 @@ fetch("news.json")
   .catch(function (err) {
     console.log(err);
   })
+
+
