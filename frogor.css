@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", cursive;
-}
 
 
 :root {
@@ -21,7 +13,6 @@
 
 .frogor-wrapper {
   height: 100%;
-  width: 100vw;  
   background: linear-gradient(-55deg, #eeec82, #d6a0b5, #4500EE, #ED8118);  
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;  
@@ -142,4 +133,4 @@
     line-height: .725rem;
   }
 }
- 
+
