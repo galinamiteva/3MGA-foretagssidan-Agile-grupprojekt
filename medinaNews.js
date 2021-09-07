@@ -100,32 +100,26 @@ body.appendChild(btn0);
 
 
         btn0.addEventListener('click', () => {
-
             for (let i = 0; i < allDiv.length; i++) {
                 allDiv[i].style.display = 'block';}
-
         });
 
 
        btn1.addEventListener('click', () => {
-
             for (let i = 0; i < allDiv.length; i++) {
                 allDiv[i].style.display = 'block';
             }
                 for (let j = 0; j < allArticle.length; j++) {
                     allArticle[j].style.display = 'none';
             }
-
         });
         btn2.addEventListener('click', () => {
-
             for (let i = 0; i < allDiv.length; i++) {
                 allDiv[i].style.display = 'block';
             }
             for (let g = 0; g < allNews.length; g++) {
                 allNews[g].style.display = 'none';
             }
-
         });
     })
     .catch(function (err) {
