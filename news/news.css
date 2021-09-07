@@ -38,12 +38,6 @@
     
 }
 
-.news-header{
-    width: 100vw;
-    height: 60px;
-    background-color:var(--black-color) ;
-}
-
 .news-header h1 {
     color:var(--white-color);
     font-size: 2rem;
@@ -195,13 +189,6 @@ main .list .list-item {
     
 }
 
-
-
-/* HÄR NERRE ÄR LITE DUMT SÄTT ATT GÖRA HTML och css HUR MÅSTE VARA HEJGHT?????? */
-.oresizing{
-    width: 100vw;
-    height: 680px;
-}
 
 
 
