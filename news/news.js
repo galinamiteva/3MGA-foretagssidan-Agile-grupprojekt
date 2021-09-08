@@ -62,12 +62,12 @@ fetch("/news/news.json")
         item_element.classList.add('list-item');     // 2 namn på classen <div class="item-name   items"> TITLE </div>
 
 
-        if (item.type == 'article') {
+        if (item.type == 'artikel') {
           item_element.classList.add('article-item');
 
         }
 
-        if (item.type == 'news') {
+        if (item.type == 'nyhet') {
           item_element.classList.add('news-item');
 
         }
