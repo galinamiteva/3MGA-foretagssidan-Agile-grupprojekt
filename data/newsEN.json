@@ -1,55 +1,55 @@
 [
     {
         "author" : "Larissa Yunis",
-        "name":"Hur fungerar en glödlampa?",
+        "name":"How does a light bulb work?",
         "type": "article",
         "date":"2021-04-13"
         
     },
     {
         "author": "William Pettersson",
-        "name":"Ett effektivt sätt att tillverka ljus?",
+        "name":"An efficient way to make light?",
         "type": "article",
         "date": "2020-07-09"
 
     },
     {
         "author": "Anna-Karin Amilon",
-        "name":"15 snygga lampor för våren 2020 – i butik just nu",
+        "name":"15 stylish lamps for spring 2020 - in store right now",
         "type": "news",
         "date":"2020-01-30"
     },
     {
-        "author": "Ella Todoro",
-        "name":"Bästa Nattlampan 2020!!!",
+        "author": "Ella Totoro",
+        "name":"Best Night Light 2020 !!!",
         "type": "news",
         "date": "2021-07-02"
  
     },
     {
         "author": "Aja Alfredo",
-        "name":"Belysning kan ge stil till ett rum", 
+        "name":"Lighting can give style to a room", 
         "type": "article",
         "date": "2020-02-13"
 
     },
     {
         "author": "Aurora Moretti",
-        "name":"3MGA släpper nya smarta-lampor",
+        "name":"3MGA releases new smart lights",
         "type": "news",
         "date":"2021-04-28"
     
     },
     {
         "author": "Charlotta von Schultz",
-        "name":"Så lyser ledlampan utan ström",
+        "name":"This is how the LED comes on without power",
         "type": "article",
         "date": "2014-03-13"
         
     },
     {
         "author": "Daniella Olhsson",
-        "name":"Barn påverkas inte av mörker på samma sätt som vuxna",
+        "name":"Children are not affected by darkness in the same way as adults",
         "type": "news",
         "date": "2017-10-07"
 
