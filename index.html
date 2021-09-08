@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produkt.css">
-    <link rel="stylesheet" href="om-oss.css">
-    <link rel="stylesheet" href="frogor.css">
-    <link rel="stylesheet" href="kontakt.css" />
-    <link rel="stylesheet" href="news/news.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/produkt.css">
+    <link rel="stylesheet" href="./css/om-oss.css">
+    <link rel="stylesheet" href="./css/frogor.css">
+    <link rel="stylesheet" href="./css/kontakt.css" />
+    <link rel="stylesheet" href="./css/news.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
@@ -25,17 +25,17 @@
 </head>
 <body>
 
-    <!-- Mamoun Kod -->
 
     <div class="header header-fixed">
         <div class="navbar container">
-            <div class="logo"><a href="#home"><img src="LogoMakr-6xH0Cy 1.png" alt="logo" ></a></div>
+            <div class="logo"><a href="#home"><img src="/images/LogoMakr-6xH0Cy 1.png" alt="logo" ></a></div>
             <input type="checkbox" id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
                 <ul>
                     <li><a href="#home">Hem</a></li>
                     <li><a href="#about">Om oss</a></li>
+                    <li><a href="#nyhet">Nyheter/Artikel</a></li>
                     <li><a href="#qu">Vanliga frågor</a></li>
                     <li><a href="#contacts">Kontakta oss</a></li>
 
@@ -55,12 +55,11 @@
 
 
 
-<!-- Arber Kod -->
 
 <div class="startsida-wrapper" id="home">
   
     <div class="startsida-logo">
-        <img class="my-logo" src="startsida-logo.png" alt="">
+        <img class="my-logo" src="./images/startsida-logo.png" alt="">
     </div>
     <div class="startsida-text">
         <h1>Intresserad i vår kollektion utav lampor?</h1>
@@ -71,7 +70,6 @@
 
 
 
-<!-- Medine kod -->
 
 <div class="omOss-wrapper" id="about">
 
@@ -157,18 +155,11 @@
 
 
 
-
-<!-- Articles börjar här -->
-
-
-
-<div class="news-wrapper">
+<div class="news-wrapper" id="nyhet">
 
     <main class="news-container">
         <section class="sort-options">
-            <!-- <button class="sort-name">Sortera efter titel </button> -->
-            <!-- <button class="sort-author">Sortera efter författare</button> -->
-            <!-- <button class="sort-meta">Sort by type</button> -->
+    
             <select id="filter" name="filter">
                 <option value="all">Visa alla</option>
                 <option value="articles">Artikel</option>
@@ -183,14 +174,7 @@
 
 
         <section class="list">
-            <!-- 
-                DYNAMISK - PÅ JS-FILEN SKA VI GÖRA DETTA
-            <div class="list-item">   
-                <div class="item-name">TITLE</div>
-                <div class="item-author">AUTHOR</div>
-                <div class="item-meta">TYPE</div>
-                <div class="item-date">Data - number</div>
-            </div> -->
+
         </section>
 
 
@@ -200,12 +184,6 @@
 
 
 
-
-<!-- Articles slutar här -->
-
-
-
-<!-- Galina kod  -->
 
 
 <div class="frogor-wrapper" id="qu">
@@ -314,7 +292,6 @@
 </div>
 
 
-<!-- Mohammad Kod  -->
 
 <div class="kontakt-container" id="contacts">
 
@@ -388,7 +365,6 @@
 
 
 
-    <!-- Mamoun Kod -->
 
     <footer class="footer">
         <div class="navbar container">
@@ -397,18 +373,18 @@
                 <ul>
                     <li><a href="#home">Hem</a></li>
                     <li><a href="#about">Om oss</a></li>
+                    <li><a href="#nyhet">Nyheter/Artikel</a></li>
                     <li><a href="#qu">Vanliga frågor</a></li>
                     <li><a href="#contacts">Kontakta oss</a></li>
+
                 </ul>
             </nav>  
+            <div class="copy">Copyright - &copy; 3MGA </div>
 
         </div>
-        <hr>
-        <div class="copy">Copyright - &copy; 3MGA </div>
 
     </footer>
     
-    <script src="/news/news.js"></script>
-    <script src="/news/news.json"></script>
+    <script src="/js/news.js"></script>
 </body>
 </html>

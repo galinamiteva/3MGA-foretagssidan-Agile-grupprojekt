@@ -10,7 +10,7 @@
 .kontakt-container-top {
     width: 100%;
     height: 100%;
-    background-image: url("./images/building.png");
+    background-image: url("../images/building.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -27,7 +27,7 @@
 }
 
 .kontakt-title-container {
-    background-image: url("./images/arrow.png");
+    background-image: url("../images/arrow.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 40px;
@@ -109,7 +109,7 @@ border-radius:5%;
 .kontakt-container-bottom {
     width: 100%;
     height: 250px;
-    background-image: url("./images/map.png");
+    background-image: url("../images/map.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
