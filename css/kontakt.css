@@ -143,7 +143,7 @@
     border-radius: 999px;
     background-image: linear-gradient(to right, transparent 50%, #023E7D 50%, #8d709e);
     background-size: 200%;  
-    color: var(--dark-color-color);
+    color: var(--dark-color);
     font-size: 2rem;
    
     cursor: pointer;
