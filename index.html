@@ -8,13 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produkt.css">
-    <link rel="stylesheet" href="om-oss.css">
-    <link rel="stylesheet" href="frogor.css">
-    <link rel="stylesheet" href="kontakt.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/produkt.css">
+    <link rel="stylesheet" href="./css/om-oss.css">
+    <link rel="stylesheet" href="./css/news.css" />
+    <link rel="stylesheet" href="./css/frogor.css">
+    <link rel="stylesheet" href="./css/kontakt.css" />
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
@@ -24,17 +26,17 @@
 </head>
 <body>
 
-    <!-- Mamoun Kod -->
 
     <div class="header header-fixed">
         <div class="navbar container">
-            <div class="logo"><a href="#home"><img src="LogoMakr-6xH0Cy 1.png" alt="logo" ></a></div>
+            <div class="logo"><a href="#home"><img src="/images/LogoMakr-6xH0Cy 1.png" alt="logo" ></a></div>
             <input type="checkbox" id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
                 <ul>
                     <li><a href="#home">Hem</a></li>
                     <li><a href="#about">Om oss</a></li>
+                    <li><a href="#nyhet">Nyheter/Artikel</a></li>
                     <li><a href="#qu">Vanliga frågor</a></li>
                     <li><a href="#contacts">Kontakta oss</a></li>
 
@@ -54,13 +56,11 @@
 
 
 
-<!-- Arber Kod -->
-
 <div class="startsida-wrapper container" id="home">
     
     <div class="foreground">
         <div class="startsida-logo">
-            <img class="my-logo" src="startsida-logo.png" alt="logo">
+            <img class="my-logo" src="./images/startsida-logo.png" alt="logo">
         </div>
         <div class="startsida-text">
             <h1>Intresserad i vår kollektion utav lampor?</h1>
@@ -76,7 +76,8 @@
     
 </div>
 
-<!-- Medine kod   -->
+
+
 
 <div class="omOss-wrapper" id="about">
 
@@ -162,8 +163,35 @@
 
 
 
+<div class="news-wrapper" id="nyhet">
 
-<!-- Galina kod  -->
+    <main class="news-container">
+        <section class="sort-options">
+    
+            <select id="filter" name="filter">
+                <option value="all">Visa alla</option>
+                <option value="articles">Artikel</option>
+                <option value="news">Nyheter</option>
+
+            </select><br>
+            <button class="sort-date">Sortera efter datum</button>
+   
+        </section>
+
+
+
+
+        <section class="list">
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
 
 
 <div class="frogor-wrapper" id="qu">
@@ -272,7 +300,8 @@
 </div>
 
 
-<!-- Mohammad Kod  -->
+
+
 <div class="kontakt-container" id="contacts">
 
     <div class="kontakt-container-top">
@@ -302,36 +331,16 @@
                   <label for="name">Förnamn / Efternamn</label>
                   <input type="text" id="name" class="name" />
                 </div>
-
                 <div class="form-group">
                   <label for="email">E-post</label>
                   <input type="email" id="email" class="email" />
                 </div>
-
-
-                <div class="form-group">
-                    <label for="about">
-                        Ämnet?
-                    </label><br>
-                    <select id="about" name="about">
-                        <option value="volvo"></option>
-                        <option value="saab">Feedback</option>
-                        <option value="fiat">Klagomål</option>
-                        <option value="audi">Jobba hos oss</option>
-                      </select><br>
-    
-                </div>
-
-
                 <div class="form-group ">
                     <label for="message">Ditt meddelande
                     </label><br>    
                     <textarea name="message" rows="4">
                     </textarea>
                 </div>
-
-
-
                 <div class="form-group ">
                   <input type="submit" value="Submit" class="button" />
                 </div>               
@@ -339,6 +348,9 @@
             </form>  
         </div>
 
+
+
+        
     </div>
     <div class="kontakt-container-bottom">
 
@@ -347,7 +359,11 @@
 
 </div>
 
-    <!-- Mamoun Kod -->
+
+
+
+
+
 
     <footer class="footer">
         <div class="navbar container">
@@ -356,21 +372,22 @@
                 <ul>
                     <li><a href="#home">Hem</a></li>
                     <li><a href="#about">Om oss</a></li>
+                    <li><a href="#nyhet">Nyheter/Artikel</a></li>
                     <li><a href="#qu">Vanliga frågor</a></li>
                     <li><a href="#contacts">Kontakta oss</a></li>
+
                 </ul>
             </nav>  
+            <div class="copy">Copyright - &copy; 3MGA </div>
 
         </div>
-        <hr>
-        <div class="copy">Copyright - &copy; 3MGA </div>
 
     </footer>
 
-    <!--   Mohhamad kod igen -->
     <script type="text/javascript">
        
         let input_fields = document.querySelectorAll('input');
+        let textArea = document.querySelectorAll('textarea');
         
         for (let i = 0; i < input_fields.length; i++) {
           let field = input_fields[i];
@@ -383,7 +400,28 @@
             }
           });
         }
+
+        for (let i = 0; i < textArea.length; i++) {
+          let area = textArea[i];
+          area.addEventListener('input', function (e) {
+            
+            if (e.target.value != "") {
+              e.target.parentNode.classList.add('has-content');
+            } else if (e.target.value == "") {
+              e.target.parentNode.classList.remove('has-content');
+            }
+          });
+        }
+
+
+
       </script> 
-    <script src="starsida.js"></script>      
+
+
+
+
+    <script src="/js/starsida.js"></script>  
+    <script src="/data/news.json"></script>
+    <script src="/js/news.js"></script>
 </body>
 </html>

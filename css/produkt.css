@@ -25,7 +25,7 @@
     top:0;
     left: 0;
     z-index:- 1;
-    background-image: url(wallpaper.jpg); 
+    background-image: url('../images/wallpaper.jpg');
    
     height: 100%;
     width: 100vw;
