@@ -68,7 +68,8 @@
     
        
         <div class="startsida-button startsida-form">
-            <input type="submit" value="Få hjälp" class="startsida-button" />
+            <input type="submit" value="Få hjälp" class="startsida-button"/><a href="#contacts"></a> </input>
+            
         </div>
     </div>
     <canvas class="background" ></canvas>
@@ -331,16 +332,36 @@
                   <label for="name">Förnamn / Efternamn</label>
                   <input type="text" id="name" class="name" />
                 </div>
+
                 <div class="form-group">
                   <label for="email">E-post</label>
                   <input type="email" id="email" class="email" />
                 </div>
+
+
+                <div class="form-group">
+                    <label for="option" class="option">
+                        Ämnet?
+                    </label><br>
+                    <select id="option" name="about" class="variant">
+                        <option value="null"></option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Klagomål">Klagomål</option>
+                        <option value="Jobb">Jobba hos oss</option>
+                      </select><br>
+    
+                </div>
+
+
                 <div class="form-group ">
                     <label for="message">Ditt meddelande
                     </label><br>    
                     <textarea name="message" rows="4">
                     </textarea>
                 </div>
+
+
+
                 <div class="form-group ">
                   <input type="submit" value="Submit" class="button" />
                 </div>               
@@ -388,6 +409,9 @@
        
         let input_fields = document.querySelectorAll('input');
         let textArea = document.querySelectorAll('textarea');
+        let selectValue = document.querySelector('#option');
+        
+        
         
         for (let i = 0; i < input_fields.length; i++) {
           let field = input_fields[i];
@@ -413,9 +437,18 @@
           });
         }
 
-
-
-      </script> 
+       
+        selectValue.addEventListener('input', function (e) {
+            if (e.target.value != "null") {
+              e.target.parentNode.classList.add('has-content');
+            } else if (e.target.value == "null") {
+              e.target.parentNode.classList.remove('has-content');
+            }
+          });
+            
+         
+       
+    </script> 
 
 
 

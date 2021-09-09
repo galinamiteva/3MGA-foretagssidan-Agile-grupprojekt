@@ -353,17 +353,32 @@
             <div class="kontakt-container-top-right">
 
                 <form class="animated-form"  onsubmit="return false">
-                    <h3>Kontakta oss</h3>
+                    <h3>Contact us</h3>
                     <div class="form-group">
-                      <label for="name">Förnamn / Efternamn</label>
+                      <label for="name">First Name / Last Name</label>
                       <input type="text" id="name" class="name" />
                     </div>
                     <div class="form-group">
-                      <label for="email">E-post</label>
+                      <label for="email">Email</label>
                       <input type="email" id="email" class="email" />
                     </div>
+    
+                    <div class="form-group">
+                        <label for="option" class="option">
+                           The subject?
+                        </label><br>
+                        <select id="option" name="about" class="variant">
+                            <option value="null"></option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Klagomål">Complaint</option>
+                            <option value="Jobb">Work with us</option>
+                          </select><br>
+        
+                    </div>
+    
+    
                     <div class="form-group ">
-                        <label for="message">Ditt meddelande
+                        <label for="message">Your message
                         </label><br>    
                         <textarea name="message" rows="4">
                         </textarea>
@@ -407,6 +422,9 @@
        
         let input_fields = document.querySelectorAll('input');
         let textArea = document.querySelectorAll('textarea');
+        let selectValue = document.querySelector('#option');
+        
+        
         
         for (let i = 0; i < input_fields.length; i++) {
           let field = input_fields[i];
@@ -432,7 +450,18 @@
           });
         }
 
-    </script> 
+       
+        selectValue.addEventListener('input', function (e) {
+            if (e.target.value != "null") {
+              e.target.parentNode.classList.add('has-content');
+            } else if (e.target.value == "null") {
+              e.target.parentNode.classList.remove('has-content');
+            }
+          });
+            
+         
+       
+    </script>  
 
     <script src="/js/starsida.js"></script>
     <script src="/js/newsEN.js"></script>
