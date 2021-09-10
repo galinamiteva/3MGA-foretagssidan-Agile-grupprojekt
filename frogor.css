@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", cursive;
+}
+
+
+:root {
+  --darkest-color: #001D3D;
+  --dark-color: #023E7D;  
+  --violet-color: #9E00FF;
+  --white-color:#fff;
+  --black-color:#000;
+
+}
+
+.frogor-wrapper {
+  height: 100%;
+  width: 100vw;  
+  
+} 
+
+
+
+.frogor-title{
+  font-size: 3rem;
+  line-height:3rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+   color: var(--white-color);  
+}
+
+.frogor-tab {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+
+}
+
+.frogor-tab input { 
+  display: none;
+  
+}
+
+.frogor-tab label {
+  display: block;  
+  margin-top: 10px;
+  padding: 20px ;
+  color: var(--white-color);  
+  background: var(--darkest-color);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1rem;
+  border-radius: 10px; 
+  
+}
+
+.frogor-tab label:hover {
+  background-color: var(--dark-color);
+}
+
+.frogor-tab .frogor-tab-content {
+  background: var(--white-color); 
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+  font-size: 0.9rem;
+  line-height: .9rem;
+}
+
+.frogor-tab .frogor-tab-content p { padding: 10px; }
+
+
+.frogor-tab input:checked ~ .frogor-tab-content { max-height: 100vh; }
+
+.frogor-tab label::after {
+  content: "\25b6";
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  display: block;
+  transition: all 0.4s;
+}
+
+.frogor-tab input:checked ~ label::after {
+   transform: rotate(90deg); 
+   
+  
+  }
+
+.frogor-carts{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding-bottom: 3.75rem;  
+}
+
+.frogor-img img{
+  flex-basis: 33%;
+}
+
+.frogor-img {
+  display: flex;
+}
+ 
+
+/************************Media Q**************************** */
+
+
+@media (max-width: 768px){
+  .frogor-title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .tab label{
+    font-size: 0.9rem;
+    line-height: .9rem;
+  }
+  .tab .tab-content {
+    font-size: .8rem;
+    line-height: .8rem;
+  }
+}
+
+@media (max-width: 576px){
+  .frogor-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .tab label{
+    font-size: .6rem;
+    line-height: .6rem;
+  }
+  .tab .tab-content {
+    font-size: .5rem;
+    line-height: .5rem;
+  }
+}
+ 
