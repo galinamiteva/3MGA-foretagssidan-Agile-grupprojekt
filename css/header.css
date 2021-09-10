@@ -1,7 +1,9 @@
 .header-fixed {
   position: fixed;
   top: 0;
-  z-index: 1;
+
+  z-index: 2;  /* måste mer än 1 pga canvas */
+
   width: 100%;
   background-color: rgba(21, 21, 21, 1);
   box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
@@ -74,7 +76,10 @@ user-select: none;
 cursor: pointer;
 padding: 28px 20px;
 position: relative;
-z-index: 3;
+
+z-index: 4;    /* canvas mer än 1 */
+
+
 }
 
 .navbar label i {
@@ -152,7 +157,10 @@ top: 0;
   .navbar nav {
     visibility: hidden;
     opacity: 0;
-    z-index: 2;
+
+    z-index: 3;  /* canvas!!! 1 */
+
+
     position: fixed;
     top: 0px;
     left: 0px;
@@ -165,7 +173,9 @@ top: 0;
   .header-fixed {
       position: fixed;
       top: 0;
-      z-index: 1;
+
+      z-index: 2; /* canvas!!! 1 */
+
       width: 100%;
       background-color: rgba(21, 21, 21, 1);
       box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
@@ -283,7 +293,10 @@ top: 0;
       .navbar nav {
         visibility: hidden;
         opacity: 0;
-        z-index: 2;
+
+        z-index: 3;   /* canvas!!!  1 */
+
+
         position: fixed;
         top: 0px;
         left: 0px;
