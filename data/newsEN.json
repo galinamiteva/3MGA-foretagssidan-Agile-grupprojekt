@@ -1,0 +1,58 @@
+[
+    {
+        "author" : "Larissa Yunis",
+        "name":"How does a light bulb work?",
+        "type": "article",
+        "date":"2021-04-13"
+        
+    },
+    {
+        "author": "William Pettersson",
+        "name":"An efficient way to make light?",
+        "type": "article",
+        "date": "2020-07-09"
+
+    },
+    {
+        "author": "Anna-Karin Amilon",
+        "name":"15 stylish lamps for spring 2020 - in store right now",
+        "type": "news",
+        "date":"2020-01-30"
+    },
+    {
+        "author": "Ella Totoro",
+        "name":"Best Night Light 2020 !!!",
+        "type": "news",
+        "date": "2021-07-02"
+ 
+    },
+    {
+        "author": "Aja Alfredo",
+        "name":"Lighting can give style to a room", 
+        "type": "article",
+        "date": "2020-02-13"
+
+    },
+    {
+        "author": "Aurora Moretti",
+        "name":"3MGA releases new smart lights",
+        "type": "news",
+        "date":"2021-04-28"
+    
+    },
+    {
+        "author": "Charlotta von Schultz",
+        "name":"This is how the LED comes on without power",
+        "type": "article",
+        "date": "2014-03-13"
+        
+    },
+    {
+        "author": "Daniella Olhsson",
+        "name":"Children are not affected by darkness in the same way as adults",
+        "type": "news",
+        "date": "2017-10-07"
+
+    }
+    
+]
