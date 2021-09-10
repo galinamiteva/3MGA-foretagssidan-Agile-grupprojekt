@@ -18,9 +18,10 @@
 }
 
 
+
 .general-container{
     height: 100%;
-    width: 100vw; 
+    width: 100%; 
     background: linear-gradient(-55deg, #eeec82, #d6a0b5, #4500EE, #ED8118);  
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;  
@@ -103,6 +104,7 @@ font-size: 1rem;
 font-weight: 500;
 text-transform: uppercase;
 cursor: pointer;
+
 width: 20%;
 min-width: 200px;
 }   
@@ -111,6 +113,10 @@ main .sort-options select {
     width: 20%;
     min-width: 200px;  
 }
+
+
+ 
+
 
 main .sort-options button:hover {
     background-color: var(--darkest-color);
@@ -141,6 +147,7 @@ main .list .list-item {
 }
 
 main .list .list-item:hover {
+
     background-color: var(--dark-color);
     cursor: pointer;
 }
@@ -165,6 +172,7 @@ main .list .list-item:hover {
 }
 
 
+
 #filter {
 padding:10px;
 color: white;
@@ -186,12 +194,6 @@ cursor: pointer;
     background-color: var(--darkest-color);
     
 }
-
-
-
-
-
-
 
 @keyframes gradient {
     0% {
