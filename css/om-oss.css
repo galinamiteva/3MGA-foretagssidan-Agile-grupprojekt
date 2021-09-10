@@ -3,11 +3,12 @@
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 1);
     height: 100%;
-    background-image: url(/images/room.png); 
+    background-image: url('../images/room.png'); 
     background-size:cover;
     background-repeat: no-repeat;
     padding-bottom: 3rem;
-  
+    width: 100%;
+
 }
 .omOss-h2{
     width:70%;

@@ -9,7 +9,7 @@ const forms = document.forms;
 const sort_date_btn = document.querySelector('.sort-options .sort-date')
 
 
-fetch("/news/news.json")
+fetch("/data/newsEN.json")
   .then(function (resp) {
     return resp.json();
   })
@@ -62,12 +62,12 @@ fetch("/news/news.json")
         item_element.classList.add('list-item');     // 2 namn på classen <div class="item-name   items"> TITLE </div>
 
 
-        if (item.type == 'artikel') {
+        if (item.type == 'article') {
           item_element.classList.add('article-item');
 
         }
 
-        if (item.type == 'nyhet') {
+        if (item.type == 'news') {
           item_element.classList.add('news-item');
 
         }
