@@ -1,5 +1,6 @@
 
 
+
 const list = document.querySelector('.list');
 const forms = document.forms;
 
@@ -176,5 +177,4 @@ fetch("/data/news.json")
   .catch(function (err) {
     console.log(err);
   })
-
 

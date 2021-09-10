@@ -3,23 +3,43 @@
 
 
 
-
-
 .startsida-wrapper {
-    height: 100vh;
-    background-image: url('../images/wallpaper.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 95vh;
+    width: 100%;   
+    
 }
 
+.foreground{
+    display: flex;
+    position: relative;   
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100%;
+    width: 100%;   
+    
+}
+
+ .background{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index:- 1;
+    background-image: url('../images/wallpaper.jpg');
+   
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
 
 .startsida-logo {
-    display: flex;
+    display: flex; 
+
     justify-content: center;
 }
 
@@ -38,29 +58,32 @@
 
 
 
-.startsida-button {
-    margin-top: 3rem;
-    width: 350px;
-    height: 80px;
-    left: 529px;
-    top: 829px;
-    border-radius: 50px;
-    background-color: #9E00FF;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 2.5rem;
+  .startsida-form input {
+    
+    display:block;
+    width: 100%;
+    padding: 2px 60px;
+   
+    background-color: rgba(255, 255, 255, 0.3);    
+    outline: none;
     color: #fff;
-    cursor: pointer;
-}
+    font-size: 2.5rem;
+    transition: 0.4s ease-out;      
+    border: 3px solid var(--dark-color);
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #023E7D 50%, #8d709e);
+    background-size: 200%;     
+    cursor: pointer;  
+  }
 
+  
 
-.startsida-button:hover {
-    background-color: #6a1d9b;
-    transition: 1s;
-}
-
+  .startsida-form input:hover {  
+      transition: 1s;
+      color:#fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+  }
 
 
 
@@ -82,4 +105,34 @@
         margin-top: 1rem;
         font-size: 2.3rem;
     }
+
 }
+
+@media (max-width: 768px) {
+    .my-logo {
+        margin-top: 5rem;
+        height: 290px;
+        width: 400px;
+    }
+
+
+    .startsida-text {
+        font-size: 1rem;
+    }
+
+    .startsida-button {
+        width: 300px;
+        height: 60px;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-logo {
+        margin-top: 5rem;
+        height: 230px;
+        width: 350px;
+    }
+
+} 
